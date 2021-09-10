@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="es">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoku</title>
+    <!--CSS-->
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <!--Font-->
+    <!--Icon-->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <!--Icon-->
+    <link rel="stylesheet" href="{ % static 'css/style.css' % }">
+    <!--CSS-->
+        
+</head>
+<body>
+    <section>
+        <header>
+            <div class="brand">
+                <img src="assets/images/logo.png" alt="Logo Hoku" class="logo-img">
+                <div class="logo">Hoku</div>
+            </div>
+            <ul class="nav-bar">
+                <li class="nb-active"><a href="#services">Servicios</a></li>
+                <li><a href="#catalog">Catálogo</a></li>
+                <li><a href="#about-us">Acerca de Nosotros</a></li>
+            </ul>
+            <div class="tools">
+                <a href="#" class="cart-button">
+                    <span class="material-icons-outlined">
+                        shopping_cart
+                    </span>
+                    <span class="badge"></span>
+                </a>
+                <div class="signup">
+                    Registrarse
+                </div>
+                <div class="login">
+                    Ingresar
+                </div>
+            </div>
+        </header>
+        <div class="container" id="init">
+            <div class="info">
+                <h2>Más rápido</h2>
+                <h1>Facilita tu vida ordenando tu <span>comida</span></h1>
+                <p>Nuestra labor es ayudarte a disfrutar tu deliciosa comida con un rápido servicio de delivery.</p>
+                <button type="button">Empezar</button>
+            </div>
+            <div class="img">
+                <img src="assets/images/eat.png" alt="Hoku">
+            </div>
+        </div>
+        <div class="container" id="services">
+            <h2>¿Que ofrecemos?</h2>
+            <h1>Tu compañero favorito de compra de comida</h1>
+            <div class="features">
+                <div class="ftr">
+                    <img src="assets/images/ftr.png" alt="features">
+                    <h3>Fácil de Ordenar</h3>
+                    <p>Tan solo necesitas pocos pasos para ordenar tu comida</p>
+                </div>
+                <div class="ftr">
+                    <img src="assets/images/ftr.png" alt="features">
+                    <h3>Fácil de Ordenar</h3>
+                    <p>Tan solo necesitas pocos pasos para ordenar tu comida</p>
+                </div>
+                <div class="ftr">
+                    <img src="assets/images/ftr.png" alt="features">
+                    <h3>Fácil de Ordenar</h3>
+                    <p>Tan solo necesitas pocos pasos para ordenar tu comida</p>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="catalog">
+            <h2>Nuestro Catalogo</h2>
+            <h1>Unos platos que te dejan deseando mas</h1>
+            <div class="content">
+                <div class="categories">
+                    <div class="category">
+                        <span class="material-icons-outlined">
+                            lunch_dining
+                        </span>
+                        <p>Hamburgesa</p>
+                    </div>
+                    <div class="category">
+                        <span class="material-icons-outlined">
+                            restaurant
+                        </span>
+                        <p>Menu</p>
+                    </div>
+                    <div class="category">
+                        <span class="material-icons-outlined">
+                            icecream
+                        </span>
+                        <p>Helados</p>
+                    </div>
+                    <div class="category">
+                        <span class="material-icons-outlined">
+                            fastfood
+                        </span>
+                        <p>Jugos</p>
+                    </div>
+                    <div class="category">
+                        <span class="material-icons-outlined">
+                            menu_book
+                        </span>
+                        <p>Desayunos</p>
+                    </div>
+                    <div class="category">
+                        <span class="material-icons-outlined">
+                            menu_book
+                        </span>
+                        <p>Almuerzos</p>
+                    </div>
+                    <div class="category">
+                        <span class="material-icons-outlined">
+                            menu_book
+                        </span>
+                        <p>Cenas</p>
+                    </div>
+                    <div class="category">
+                        <span class="material-icons-outlined">
+                            food_bank
+                        </span>
+                        <p>Orgánico</p>
+                    </div>
+                </div>
+                <div class="places">
+                    <div class="card">
+                        <img src="assets/images/store low.jpg" alt="place">
+                        <div class="card-info">
+                            <h3 class="name">Todo Light</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
+                            <ul class="chips">
+                                <li class="chip">A</li>
+                                <li class="chip">B</li>
+                                <li class="chip">C</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/store low.jpg" alt="place">
+                        <div class="card-info">
+                            <h3 class="name">Todo Light</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
+                            <ul class="chips">
+                                <li class="chip">A</li>
+                                <li class="chip">B</li>
+                                <li class="chip">C</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/store low.jpg" alt="place">
+                        <div class="card-info">
+                            <h3 class="name">Todo Light</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
+                            <ul class="chips">
+                                <li class="chip">A</li>
+                                <li class="chip">B</li>
+                                <li class="chip">C</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/store low.jpg" alt="place">
+                        <div class="card-info">
+                            <h3 class="name">Todo Light</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
+                            <ul class="chips">
+                                <li class="chip">A</li>
+                                <li class="chip">B</li>
+                                <li class="chip">C</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/store low.jpg" alt="place">
+                        <div class="card-info">
+                            <h3 class="name">Todo Light</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
+                            <ul class="chips">
+                                <li class="chip">A</li>
+                                <li class="chip">B</li>
+                                <li class="chip">C</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/store low.jpg" alt="place">
+                        <div class="card-info">
+                            <h3 class="name">Todo Light</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
+                            <ul class="chips">
+                                <li class="chip">A</li>
+                                <li class="chip">B</li>
+                                <li class="chip">C</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/store low.jpg" alt="place">
+                        <div class="card-info">
+                            <h3 class="name">Todo Light</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
+                            <ul class="chips">
+                                <li class="chip">A</li>
+                                <li class="chip">B</li>
+                                <li class="chip">C</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="assets/images/store low.jpg" alt="place">
+                        <div class="card-info">
+                            <h3 class="name">Todo Light</h3>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
+                            <ul class="chips">
+                                <li class="chip">A</li>
+                                <li class="chip">B</li>
+                                <li class="chip">C</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="about-us">
+            <div class="image-slider">
+                <img src="assets/images/asd.jpg" alt="">
+            </div>
+            <div class="feedback">
+                <h2>Conoce sobre</h2>
+                <h1>Que opinan nuestros clientes de nosotros</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quaerat totam eligendi illum iste odit ipsam praesentium omnis nisi soluta, animi labore incidunt, quasi hic quis unde enim molestiae laudantium.</p>
+                <div class="profile-card">
+                    <img src="assets/images/user.jpg" alt="User">
+                    <div class="profile-info">
+                        <h3>Hugo Matta</h3>
+                        <h4>Ingeniería de Sistemas</h4>
+                    </div>
+                </div>
+                <div class="score">
+                    <span class="material-icons-outlined">
+                        star
+                    </span>
+                    <span class="material-icons-outlined">
+                        star
+                    </span>
+                    <span class="material-icons-outlined">
+                        star
+                    </span>
+                    <span class="material-icons-outlined">
+                        star_half
+                    </span>
+                    <span class="material-icons-outlined">
+                        star_border
+                    </span>
+                    <p>4,5</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="hoku">
+                <div class="brand">
+                    <img src="assets/images/logo.png" alt="Logo Hoku" class="logo-img">
+                    <div class="logo">Hoku</div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nostrum dignissimos natus, eius cum corrupti cupiditate laboriosam.</p>
+                <ul>
+                    <li><a href="#">F</a></li>
+                    <li><a href="#">T</a></li>
+                    <li><a href="#">I</a></li>
+                </ul>
+            </div>
+            <div class="about">
+                <h1>Compañia</h1>
+                <ul>
+                    <li><a href="#">Acerca de nosotros</a></li>
+                    <li><a href="#">Características</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">Catálogo</a></li>
+                </ul>
+            </div>
+            <div class="legal">
+                <h1>Legal</h1>
+                <ul>
+                    <li><a href="#">Terminos y condiciones</a></li>
+                    <li><a href="#">Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Accesibilidad</a></li>
+                </ul>
+            </div>
+            <div class="help">
+                <h1>Soporte</h1>
+                <ul>
+                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Marcas</a></li>
+                    <li><a href="#">Cuenta</a></li>
+                </ul>
+            </div>
+            <div class="message">
+                <h1>Feedback</h1>
+                <p>¿Preguntas o feedback? Nos encantaría saber de ti</p>
+                <div class="send">
+                    <input type="text" name="email" id="emailF" placeholder="Email">
+                    <span class="material-icons-outlined">
+                        forward
+                    </span>
+                </div>
+                
+            </div>
+        </footer>
+
+        <div class="container" id="account">
+            <div class="login">
+                <div class="left">
+                    <h1>Ingresa a Hoku</h1>
+                    <form action="">
+                        <input type="email" name="email" id="email" placeholder="Correo">
+                        <input type="password" name="password" id="password" placeholder="Contraseña">
+                    </form>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <button type="button">Empezar</button>
+                </div>
+                <div class="right">
+                    <div class="text">
+                        <h1>Bienvenido de vuelta</h1>
+                        <p>Para seguir ayudandote por favor ingresa los datos de tu cuenta</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-up">
+                <div class="left">
+                    <div class="text">
+                        <h1>Hola amigo</h1>
+                        <p>Registra los datos de tu cuenta para empezar a usar nuestros servicios</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <h1>Crear una cuenta</h1>
+                    <form action="">
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+                        <input type="email" name="email" id="emailR" placeholder="Correo">
+                        <input type="password" name="password" id="passwordR" placeholder="Contraseña">
+                        <input type="password" name="passwordC" id="passwordRC" placeholder="Confirme su contraseña">
+                    </form>
+                    <button type="button">Registrarse</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="place">
+            <div class="img-slider">
+                <img class="slide fade" src="assets/images/store low.jpg" alt="1">
+                <img class="slide fade" src="assets/images/store low.jpg" alt="2">
+                <img class="slide fade" src="assets/images/store low.jpg" alt="3">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="place-info">
+                <h1>Nombre del establecimiento</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed voluptate provident saepe culpa soluta aliquam laborum officia magni, totam, aperiam quis officiis illum eum vitae enim architecto id, cupiditate ad!</p>
+                <div class="score">
+                    <span class="material-icons-outlined">
+                        star
+                    </span>
+                    <span class="material-icons-outlined">
+                        star
+                    </span>
+                    <span class="material-icons-outlined">
+                        star
+                    </span>
+                    <span class="material-icons-outlined">
+                        star_half
+                    </span>
+                    <span class="material-icons-outlined">
+                        star_border
+                    </span>
+                    <p>4,5</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <div id="themeSwitch">
+        <span class="material-icons-outlined">
+        brightness_medium
+        </span>
+    </div>
+    <script>
+        let themeSwitch = document.querySelector('#themeSwitch');
+        let body = document.querySelector('body');
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+
+
+        themeSwitch.onclick = function(){
+            body.classList.toggle('dark');
+        }
+
+    </script>
+    
+</body>
+</html>

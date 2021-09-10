@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -28,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
+#['D:/oca04/Programacion/Hocku/Hocku-app/hocku/Plantillas/static'] # ! ES NECESARIO CAMBIAR PARA CADA ORDENADOR
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,9 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'GestionPersonas',
-    'GestionProductos',
-    'GestionPedidos',
+    'Apps.GestionPersonas',
+    'Apps.GestionProductos',
+    'Apps.GestionPedidos',
 ]
 
 MIDDLEWARE = [
@@ -57,7 +59,8 @@ ROOT_URLCONF = 'hocku.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['D:/oca04/Programacion/Hocku/hocku/hocku/Plantillas'], # ! ES NECESARIO CAMBIAR PARA CADA ORDENADOR
+        #'DIRS': [os.path.join(BASE_DIR, 'Templates')],
+        'DIRS': ['D:/oca04/Programacion/Hocku/Hocku-app/Templates'], # ! ES NECESARIO CAMBIAR PARA CADA ORDENADOR
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -126,7 +129,41 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Add these new lines
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+if DEBUG:
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+    MEDIA_URL = '/media/'
+'''
+else:
+    DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+    AWS_S3_REGION_NAME = config('DO_REGION_NAME', default='')
+    AWS_S3_ENDPOINT_URL = config('DO_ENDPOINT', default='')
+    AWS_STORAGE_BUCKET_NAME = config('DO_BUCKET_NAME', default='')
+    AWS_ACCESS_KEY_ID = config('DO_ACCESS_KEY', default='')
+    AWS_SECRET_ACCESS_KEY = config('DO_SECRET_KEY', default='')
+'''
+
+'''
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT  = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)'''
+'''
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    '/var/www/static/',
+]
+'''
