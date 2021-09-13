@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'Apps.GestionPersonas',
     'Apps.GestionProductos',
     'Apps.GestionPedidos',
+    'R_Grados',
 ]
 
 MIDDLEWARE = [
@@ -59,8 +60,8 @@ ROOT_URLCONF = 'hocku.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        #'DIRS': [os.path.join(BASE_DIR, 'Templates')],
-        'DIRS': ['D:/oca04/Programacion/Hocku/Hocku-app/Templates'], # ! ES NECESARIO CAMBIAR PARA CADA ORDENADOR
+        'DIRS': [os.path.join(BASE_DIR, 'Templates')],
+        #'DIRS': ['D:/oca04/Programacion/Hocku/Hocku-app/Templates'], # ! ES NECESARIO CAMBIAR PARA CADA ORDENADOR
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -89,7 +90,14 @@ DATABASES = {
         'DATABASE_PORT' : '5432',
     }
 }
-
+'''
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'euznvmrw',
+        'USER': 'euznvmrw',
+        'PASSWORD': 'fdo-cW-MsOjFF4fWkRdtzqDWfpe85iAa',
+        'HOST' : 'chunee.db.elephantsql.com',
+        'DATABASE_PORT' : '5432',
+'''
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -145,6 +153,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 if DEBUG:
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
     MEDIA_URL = '/media/'
+
 '''
 else:
     DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

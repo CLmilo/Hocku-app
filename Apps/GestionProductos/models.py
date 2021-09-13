@@ -5,7 +5,7 @@ from django.db.models.base import Model
 from django.db.models.fields import CharField, DateField, FloatField, IntegerField
 from django.db.models.fields.related import ForeignKey
 from django.utils import timezone
-from Apps.GestionPersonas.models import Party,Usuario
+from Apps.GestionPersonas.models import Party, Tipo_Usuario,Usuario
 
 # Create your models here.
 

@@ -1,8 +1,9 @@
 
 <!DOCTYPE html>
 <html lang="es">
-{% load static %}
+
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +17,7 @@
     <!--Icon-->
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <!--Icon-->
-    <link rel="stylesheet" href="{ % static 'css/style.css' % }">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
     <!--CSS-->
         
 </head>
@@ -24,7 +25,7 @@
     <section>
         <header>
             <div class="brand">
-                <img src="assets/images/logo.png" alt="Logo Hoku" class="logo-img">
+                <img src="{% static 'imagenes/logo.png' %}" alt="Logo Hoku" class="logo-img">
                 <div class="logo">Hoku</div>
             </div>
             <ul class="nav-bar">
@@ -55,7 +56,7 @@
                 <button type="button">Empezar</button>
             </div>
             <div class="img">
-                <img src="assets/images/eat.png" alt="Hoku">
+                <img src="{% static 'imagenes/eat.png' %}" alt="Hoku">
             </div>
         </div>
         <div class="container" id="services">
@@ -63,17 +64,17 @@
             <h1>Tu compañero favorito de compra de comida</h1>
             <div class="features">
                 <div class="ftr">
-                    <img src="assets/images/ftr.png" alt="features">
+                    <img src="{% static 'imagenes/ftr.png' %}" alt="features">
                     <h3>Fácil de Ordenar</h3>
                     <p>Tan solo necesitas pocos pasos para ordenar tu comida</p>
                 </div>
                 <div class="ftr">
-                    <img src="assets/images/ftr.png" alt="features">
+                    <img src="{% static 'imagenes/ftr.png' %}" alt="features">
                     <h3>Fácil de Ordenar</h3>
                     <p>Tan solo necesitas pocos pasos para ordenar tu comida</p>
                 </div>
                 <div class="ftr">
-                    <img src="assets/images/ftr.png" alt="features">
+                    <img src="{% static 'imagenes/ftr.png' %}" alt="features">
                     <h3>Fácil de Ordenar</h3>
                     <p>Tan solo necesitas pocos pasos para ordenar tu comida</p>
                 </div>
@@ -135,7 +136,7 @@
                 </div>
                 <div class="places">
                     <div class="card">
-                        <img src="assets/images/store low.jpg" alt="place">
+                        <img src="{% static 'imagenes/store low.jpg' %}" alt="place">
                         <div class="card-info">
                             <h3 class="name">Todo Light</h3>
                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
@@ -147,7 +148,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/store low.jpg" alt="place">
+                        <img src="{% static 'imagenes/store low.jpg' %}" alt="place">
                         <div class="card-info">
                             <h3 class="name">Todo Light</h3>
                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
@@ -159,7 +160,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/store low.jpg" alt="place">
+                        <img src="{% static 'imagenes/store low.jpg' %}" alt="place">
                         <div class="card-info">
                             <h3 class="name">Todo Light</h3>
                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
@@ -171,7 +172,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/store low.jpg" alt="place">
+                        <img src="{% static 'imagenes/store low.jpg' %}" alt="place">
                         <div class="card-info">
                             <h3 class="name">Todo Light</h3>
                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
@@ -183,7 +184,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/store low.jpg" alt="place">
+                        <img src="{% static 'imagenes/store low.jpg' %}" alt="place">
                         <div class="card-info">
                             <h3 class="name">Todo Light</h3>
                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
@@ -195,7 +196,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/store low.jpg" alt="place">
+                        <img src="{% static 'imagenes/store low.jpg' %}" alt="place">
                         <div class="card-info">
                             <h3 class="name">Todo Light</h3>
                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
@@ -207,7 +208,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/store low.jpg" alt="place">
+                        <img src="{% static 'imagenes/store low.jpg'  %}" alt="place">
                         <div class="card-info">
                             <h3 class="name">Todo Light</h3>
                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
@@ -219,7 +220,7 @@
                         </div>
                     </div>
                     <div class="card">
-                        <img src="assets/images/store low.jpg" alt="place">
+                        <img src="{% static 'imagenes/store low.jpg' %}" alt="place">
                         <div class="card-info">
                             <h3 class="name">Todo Light</h3>
                             <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam consectetur ex quos officiis magnam sequi est placeat eius iste omnis!</p>
@@ -235,14 +236,14 @@
         </div>
         <div class="container" id="about-us">
             <div class="image-slider">
-                <img src="assets/images/asd.jpg" alt="">
+                <img src="{% static 'imagenes/asd.jpg' %}" alt="">
             </div>
             <div class="feedback">
                 <h2>Conoce sobre</h2>
                 <h1>Que opinan nuestros clientes de nosotros</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio quaerat totam eligendi illum iste odit ipsam praesentium omnis nisi soluta, animi labore incidunt, quasi hic quis unde enim molestiae laudantium.</p>
                 <div class="profile-card">
-                    <img src="assets/images/user.jpg" alt="User">
+                    <img src="{% static 'imagenes/user.jpg' %}" alt="User">
                     <div class="profile-info">
                         <h3>Hugo Matta</h3>
                         <h4>Ingeniería de Sistemas</h4>
@@ -269,9 +270,9 @@
             </div>
         </div>
         <footer>
-            <div class="hoku">
+            <div class="hoku"
                 <div class="brand">
-                    <img src="assets/images/logo.png" alt="Logo Hoku" class="logo-img">
+                    <img src="{% static 'imagenes/logo.png' %}" alt="Logo Hoku" class="logo-img">
                     <div class="logo">Hoku</div>
                 </div>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum nostrum dignissimos natus, eius cum corrupti cupiditate laboriosam.</p>
@@ -325,12 +326,13 @@
             <div class="login">
                 <div class="left">
                     <h1>Ingresa a Hoku</h1>
-                    <form action="">
-                        <input type="email" name="email" id="email" placeholder="Correo">
-                        <input type="password" name="password" id="password" placeholder="Contraseña">
+                    <form action="/login/" method="GET">
+                        <input type="text" name="mail" id="email" placeholder="email">
+                        <input type="password" name="psw" id="password" placeholder="Contraseña">
+                        <button type="submit" value="login">Empezar</button>
                     </form>
                     <a href="#">¿Olvidaste tu contraseña?</a>
-                    <button type="button">Empezar</button>
+                    
                 </div>
                 <div class="right">
                     <div class="text">
@@ -361,9 +363,9 @@
 
         <div class="container" id="place">
             <div class="img-slider">
-                <img class="slide fade" src="assets/images/store low.jpg" alt="1">
-                <img class="slide fade" src="assets/images/store low.jpg" alt="2">
-                <img class="slide fade" src="assets/images/store low.jpg" alt="3">
+                <img class="slide fade" src="{% static 'imagenes/store low.jpg' %}" alt="1">
+                <img class="slide fade" src="{% static 'imagenes/store low.jpg' %}" alt="2">
+                <img class="slide fade" src="{% static 'imagenes/store low.jpg' %}" alt="3">
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>

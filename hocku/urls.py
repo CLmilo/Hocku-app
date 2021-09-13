@@ -14,21 +14,28 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 #from . import views
-from hocku.view import login
-from Apps.GestionPersonas import views
-from Apps.GestionPersonas.views import PersonasView
 from django.contrib import admin
 from django.urls import path, include
-from Apps.GestionPersonas import urls as Personas_urls
 from django.conf import settings
 from django.conf.urls.static import static
+
+from hocku.view import login
+from Apps.GestionPersonas import views
+#from Apps.GestionPersonas.views import  Login
+#from Apps.GestionPersonas import urls as Personas_urls
+
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('index/', PersonasView.as_view()),
-    path('index/', include(Personas_urls.urlpatterns)),
+    #path('index/', include(Personas_urls.urlpatterns)),
    # path('login/', views.login),
-    path('login/', login),
+    #path('login/', login),
+    path('', include('R_Grados.urls')),
+    path('', include('Apps.GestionPersonas.urls')),
+    #path('buscar/',buscar),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
